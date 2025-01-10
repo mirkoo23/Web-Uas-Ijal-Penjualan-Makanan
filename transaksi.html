@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Aplikasi Penjualan Makanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+            <li><a href="profil.html">Profil</a></li>
+        </ul>
+    </nav>
+
+    <div class="transaction-container">
+        <h1>Proses Transaksi</h1>
+        <p>Silakan lengkapi data di bawah ini untuk menyelesaikan transaksi Anda.</p>
+
+        <div class="order-summary">
+            <h3>Pesanan Anda:</h3>
+            <p><strong>Pesanan: </strong><span id="pesanan"></span></p>
+        </div>
+
+        <div class="form-container">
+            <label for="nama">Nama Pembeli:</label>
+            <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+
+            <label for="alamat">Alamat Pengiriman:</label>
+            <input type="text" id="alamat" placeholder="Masukkan alamat pengiriman" required>
+
+            <button onclick="submitTransaksi()">Kirim Transaksi</button>
+        </div>
+
+        <h3>Daftar Transaksi</h3>
+        <ul id="transaksi-list">
+            <!-- Daftar transaksi akan ditambahkan di sini -->
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>warung ijal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
